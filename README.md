@@ -1,6 +1,23 @@
 # Mine The Model
 
-A small project containing a Jupyter notebook with experiments and notes for "Mine The Model".
+A time series forecasting project for predicting stock closing prices over the next 100 trading days. This notebook implements multiple forecasting approaches including ARIMA, LSTM, and Prophet models to analyze historical stock data and generate future predictions.
+
+## Project Overview
+
+This project tackles the **Mine The Model 2023** competition challenge, which involves:
+- Analyzing historical stock price data (Close, Open, High, Low, Volume)
+- Building time series models to forecast future closing prices
+- Predicting the next 100 trading days (excluding weekends) for 50 different stocks
+- Comparing multiple forecasting approaches (Linear Regression, ARIMA, Prophet, LSTM)
+
+**Key Features:**
+- Lag feature engineering for baseline models
+- ARIMA with Box-Cox transformation for variance stabilization
+- Grid search optimization for ARIMA hyperparameters (p, d, q)
+- Auto-ARIMA for automated parameter selection
+- Moving average analysis
+- Outlier detection and handling (IQR method)
+- Train/test split validation with visualization
 
 **Contents**
 - `mine-the-model.ipynb` — primary notebook with the project's code and analysis.
